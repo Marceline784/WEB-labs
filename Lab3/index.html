@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title></title>
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <meta name="Marceline" content="width=device-width">
+   </head>
+   <body>
+   <form>
+      <h2>Анкета</h2>
+      <p class="note"><span class="required">*</span> Oбов'язкове поле</p>
+      <label class="font">Прізвище: <span class="required">*</span></label>
+      <input type="text" class="surname" required>
+   
+      <label class="font">Ім'я: <span class="required">*</span></label>
+      <input type="text" class="name" required>
+   <label class="font">З яких джерел Ви отримали інформацію про інтернет-магазин? <span class="required">*</span></label>
+   <textarea class="source" required rows="4" cols="40"></textarea>
+   
+   <label class="font">Зазначте кількість інтернет-магазинів, відомих Вам: <span class="required">*</span></label>
+   <select class="shops">
+      <option value="">-- Оберіть --</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+   </select>
+   <label class="font">Оцініть роботу магазину за характеристиками <span class="required">*</span></label>
+   <table border="1" cellpadding="8">
+      <tr>
+         <th>Характеристика</th>
+         <th>Погано</th>
+         <th>Задовільно</th>
+         <th>Добре</th>
+         <th>Відмінно</th>
+      </tr>
+      <tr>
+         <td>Асортимент</td>
+         <td><input type="radio" name="assortment" value="bad" required></td>
+         <td><input type="radio" name="assortment" value="satisfactory"></td>
+         <td><input type="radio" name="assortment" value="good"></td>
+         <td><input type="radio" name="assortment" value="excellent"></td>
+      </tr>
+      <tr>
+         <td>Повнота інформації про товар</td>
+         <td><input type="radio" name="info" value="bad" required></td>
+         <td><input type="radio" name="info" value="satisfactory"></td>
+         <td><input type="radio" name="info" value="good"></td>
+         <td><input type="radio" name="info" value="excellent"></td>
+      </tr>
+      <tr>
+         <td>Зручність формування замовлення</td>
+         <td><input type="radio" name="order" value="bad" required></td>
+         <td><input type="radio" name="order" value="satisfactory"></td>
+         <td><input type="radio" name="order" value="good"></td>
+         <td><input type="radio" name="order" value="excellent"></td>
+      </tr>
+      <tr>
+         <td>Кількість варіантів оплати</td>
+         <td><input type="radio" name="payment" value="bad" required></td>
+         <td><input type="radio" name="payment" value="satisfactory"></td>
+         <td><input type="radio" name="payment" value="good"></td>
+         <td><input type="radio" name="payment" value="excellent"></td>
+      </tr>
+   </table>
+   <label class="font">Що на Вашу думку найбільш важливе для ефективного функціонування інтернет-магазину? <span
+         class="required">*</span></label>
+   <div class="radio-group">
+      <label><input type="radio" name="important" value="assortment" required> Наявний асортимент</label>
+      <label><input type="radio" name="important" value="design"> Дизайн і зручність користування
+         інтернет-магазином</label>
+      <label><input type="radio" name="important" value="service"> Наявність сервісного обслуговування</label>
+      <label><input type="radio" name="important" value="other"> Інше:  
+         <input type="text" name="otherText" placeholder="Ваш варіант">
+      </label>
+   </div>
+   <label class="font">Відмітьте групи товарів, які викликали у Вас найбільше зацікавлення: <span class="required">*</span></label>
+   <div class="checkbox-group">
+      <label><input type="checkbox" name="interests[]" value="appliances" required> Побутова техніка</label>
+      <label><input type="checkbox" name="interests[]" value="furniture"> Меблі</label>
+      <label><input type="checkbox" name="interests[]" value="chemicals"> Побутова хімія</label>
+      <label><input type="checkbox" name="interests[]" value="computer"> Комп'ютерна техніка</label>
+      <label><input type="checkbox" name="interests[]" value="other"> Інше:
+         <input type="text" name="otherInterest" placeholder="Ваш варіант">
+      </label>
+   </div>
+   <label class="font">Дайте загальну оцінку інтернет-магазину за пятибальною шкалою: <span
+         class="required">*</span></label>
+   <div class="rating-scale">
+   <div class="scale-numbers">
+      <span>1</span>
+      <span>2</span>
+      <span>3</span>
+      <span>4</span>
+      <span>5</span>
+   </div>
+   <hr>
+   <div class="scale-options">
+      <span>Дуже погано</span>
+      <label><input type="radio" name="rating" value="1" required></label>
+      <label><input type="radio" name="rating" value="2"></label>
+      <label><input type="radio" name="rating" value="3"></label>
+      <label><input type="radio" name="rating" value="4"></label>
+      <label><input type="radio" name="rating" value="5"></label>
+      <span>Відмінно</span>
+   </div>
+   <hr>
+</div>
+<label class="font">Що на Вашу думку необхідно змінити/покращити в роботі нашого інтернет-магазину?</label>
+<textarea name="improvements" rows="4" cols="40"></textarea>
+      <input type="submit" value="Відправити">
+   </form>
+   </body>
+</html>

@@ -1,0 +1,123 @@
+input, select, textarea {
+   display: block;
+   margin-bottom: 15px;
+}
+
+.font {
+   font-size: 18px;
+   font-weight: bold;
+   display: block; 
+   margin-top: 30px;
+   margin-bottom: 5px;
+}
+
+hr {
+   border: none;
+   border-top: 2px solid #1e5bb0;
+   margin: 10px 0;
+}
+
+input[type="text"], textarea, select{
+   padding: 5px;
+   border-radius: 5px;
+   border: 1px solid gray;
+}
+
+input[type="text"]:focus, textarea:focus, select:focus {
+   border: 2px solid #1e5bb0;
+   outline: none;
+}  
+
+.required {
+   color: red;
+}
+
+.note {
+   margin-top: 15px;
+   font-size: 14px;
+   color: red;
+}
+
+table {
+   border-collapse: collapse;
+   margin-top: 15px;
+   width: 700px;
+}
+
+th, td {
+   border: 1px solid #ddd;
+   padding: 10px;
+   text-align: center;
+}
+
+th {
+   background-color: #1e5bb0;
+   color: white;
+}
+
+tr:hover {
+   background-color: #eef5ff;
+}
+
+input[type="radio"], input[type="checkbox"], .scale-options input[type="radio"] {
+   accent-color: #1e5bb0;
+   width: 18px;
+   height: 18px;
+}
+
+.radio-group label, .checkbox-group label {
+   display: flex;
+   align-items: center;
+}
+
+.radio-group input[type="radio"], .checkbox-group input[type="checkbox"], .scale-options input[type="radio"] {
+   margin-right: 8px;
+   margin-top: 15px;
+}
+
+.radio-group label input[type="text"], .checkbox-group label input[type="text"]{
+   margin-left: 15px;
+   margin-top: 15px;
+   border-radius: 5px;
+   border: 1px solid gray;
+}
+
+.radio-group label input[type="text"]:focus, .checkbox-group label input[type="text"]:focus {
+   border: 2px solid #1e5bb0;
+   outline: none;
+}
+
+.rating-scale {
+   max-width: 600px;
+   margin-top: 20px;
+}
+
+.scale-numbers {
+   display: flex;
+   justify-content: center;
+   gap: 72px;
+   margin-left: 20px;
+   margin-bottom: 8px;
+}
+
+.scale-options {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+input[type="submit"] {
+   padding: 8px 25px;
+   border-radius: 5px;
+   border: none;
+   background: #1e5bb0;
+   color: white;
+   font-size: 15px;
+   font-weight: bold;
+   box-shadow: 0 3px 6px gray;
+   transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover {
+   background: #164785;
+}
